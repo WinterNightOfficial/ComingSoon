@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: genjyuu-el;
+    src: url(Font/GenJyuuGothic-ExtraLight.ttf);
+}
+@font-face {
+    font-family: genjyuu-l;
+    src: url(Font/GenJyuuGothic-Light.ttf);
+}
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .1), rgba(0, 0, 0, .6)), url(background.jpg);
+    height: 100vh;
+    background-position-x: center;
+    background-position-y: 35%;
+    background-size: cover;
+}
+.main{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    font-family: genjyuu-l;
+}
+hr{
+    width: 50%;
+    margin: 20px auto;
+    border: 1.5px solid #ffffff;
+    background-color: #ffffff;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: genjyuu-el;
+}
+#timer{
+    font-size: 40px;
+    word-spacing: 20px;
+}
+#logo{
+    max-width: 60%;
+    margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px){
+    p{
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    #timer{
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    h1{
+        font-size: 36px;
+        letter-spacing: 6px;
+    }
+    p{
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    hr{
+        border: .5px solid #ffffff;
+        width: 80%;
+    }
+    p{
+        font-size: 16px;
+    }
+    #logo{
+        max-width: 70%;
+    }
+    #timer{
+        font-size: 24px;
+        letter-spacing: 0;
+    }
+}
