@@ -23,7 +23,20 @@ header{
     position: absolute;
     transform: translate(-50%, -50%);
     color: #ffffff;
+    opacity: 0;
     text-align: center;
+    animation: float 1.5s ease-in-out forwards;
+    animation-delay: 1s;
+}
+@keyframes float{
+    from{
+        transform: translate(-50%, -40%);
+        opacity: 0;
+    }
+    to{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
 }
 h1{
     font-size: 50px;
@@ -45,6 +58,19 @@ p{
 #timer{
     font-size: 40px;
     word-spacing: 20px;
+    opacity: 0;
+    animation: timerFloat 1s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+@keyframes timerFloat{
+    from{
+        transform: translateY(20%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0%);
+        opacity: 1;
+    }
 }
 #logo{
     max-width: 60%;
