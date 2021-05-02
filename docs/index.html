@@ -14,9 +14,9 @@
     <header>
         <div class="main">
             <img src="logo.png" alt="" id="logo">
-            <h1>COMING SOON</h1>
+            <h1 id="title">COMING SOON</h1>
             <hr>
-            <p>Official website online remain:</p>
+            <p id="content">Official website online remain:</p>
             <p id="timer"></p>
         </div>
     </header>
@@ -38,7 +38,9 @@
 
         if(distance < 0){
             clearInterval(x);
-            document.getElementById("timer").innerHTML = "Almost done";
+            document.getElementById("title").innerHTML = "AVAILABLE NOW";
+            document.getElementById("content").innerHTML = "Official website online";
+            document.getElementById("timer").innerHTML = "";
         }
     }, 1000)
 </script>
