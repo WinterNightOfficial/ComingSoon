@@ -16,7 +16,6 @@
             <img src="logo.png" alt="" id="logo">
             <h1 id="title">COMING SOON</h1>
             <hr>
-            <p id="content">Official website online remain:</p>
             <p id="timer"></p>
         </div>
     </header>
@@ -38,9 +37,11 @@
 
         if(distance < 0){
             clearInterval(x);
-            document.getElementById("title").innerHTML = "AVAILABLE NOW";
-            document.getElementById("content").innerHTML = "Official website online";
-            document.getElementById("timer").innerHTML = "";
+            document.getElementById("logo").style.filter = "blur(0)";
+            document.getElementById("title").innerHTML = "OFFICIAL SITE";
+
+            document.getElementById("timer").style.letterSpacing = "3px";
+            document.getElementById("timer").innerHTML = "AVAILABLE NOW";
         }
     }, 1000)
 </script>

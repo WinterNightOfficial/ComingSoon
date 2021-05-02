@@ -75,6 +75,7 @@ p{
 #logo{
     max-width: 60%;
     margin-bottom: 20px;
+    filter: blur(9px);
 }
 @media only screen and (max-width: 1200px){
     p{
