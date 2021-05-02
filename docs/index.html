@@ -24,10 +24,10 @@
         <h3>
             Site Design By Bcoffee.
         </h3>
-        <p>Sound By <u>https://soundcloud.com/user-356546060​</u></p>
+        <p>Sound By <u id="click-able" onclick="playMusic()">https://soundcloud.com/user-356546060​</u></p>
     </footer>
 
-    <audio src="bgm.mp3" autoplay loop></audio>
+    <audio id="music" src="bgm.mp3" autoplay loop></audio>
 </body>
 
 <script>
@@ -53,6 +53,18 @@
             document.getElementById("timer").innerHTML = "AVAILABLE NOW";
         }
     }, 1000)
+</script>
+<script>
+    var audio = document.getElementById("music");
+    
+    function playMusic(){
+        if(audio.paused){
+            audio.play();
+        }
+    }
+
+    var click = document.getElementById("click-able");
+    click.style.cursor = "pointer";
 </script>
 
 </html>
