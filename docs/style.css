@@ -26,7 +26,7 @@ header{
     opacity: 0;
     text-align: center;
     animation: float 1.5s ease-in-out forwards;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 @keyframes float{
     from{
@@ -60,7 +60,7 @@ p{
     word-spacing: 20px;
     opacity: 0;
     animation: timerFloat 1s ease-in-out forwards;
-    animation-delay: 3.5s;
+    animation-delay: 2.5s;
 }
 @keyframes timerFloat{
     from{
@@ -76,6 +76,25 @@ p{
     max-width: 60%;
     margin-bottom: 20px;
     filter: blur(9px);
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, .5);
+    text-align: center;
+    color: #ffffff;
+}
+footer h3{
+    font-family: genjyuu-el;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+footer p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 5px;
 }
 @media only screen and (max-width: 1200px){
     p{
@@ -119,5 +138,15 @@ p{
     #timer{
         font-size: 24px;
         letter-spacing: 0;
+    }
+    footer h3{
+        font-size: 16px;
+        letter-spacing: 1.5px;
+        margin-top: 10px;
+    }
+    footer p{
+        font-size: 10px;
+        letter-spacing: 1px;
+        margin-top: 3px;
     }
 }
