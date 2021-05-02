@@ -96,6 +96,9 @@ p{
         font-size: 24px;
         letter-spacing: 1px;
     }
+    #logo{
+        filter: blur(6px);
+    }
 }
 @media only screen and (max-width: 600px) {
     h1{
@@ -111,6 +114,7 @@ p{
     }
     #logo{
         max-width: 70%;
+        filter: blur(4px);
     }
     #timer{
         font-size: 24px;
