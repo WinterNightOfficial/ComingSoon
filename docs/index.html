@@ -15,9 +15,9 @@
     <header>
         <div class="main">
             <img src="logo.png" alt="" id="logo">
-            <h1 id="title">COMING SOON</h1>
+            <h1 id="title">OFFICIAL SITE</h1>
             <hr>
-            <p id="timer"></p>
+            <p id="timer">https://winternightofficial.github.io/OfficialSite/</p>
         </div>
     </header>
 
@@ -31,30 +31,6 @@
     <audio id="music" src="bgm.mp3" autoplay loop></audio>
 </body>
 
-<script>
-    var countDownDate = new Date("May 13, 2021 00:00:00").getTime();
-
-    var x = setInterval(function(){
-        var now = new Date().getTime();
-        var distance = countDownDate - now;
-
-        var days = Math.floor(distance/(1000*60*60*24));
-        var hours = Math.floor((distance%(1000*60*60*24)) / (1000*60*60));
-        var minutes = Math.floor((distance%(1000*60*60)) / (1000*60));
-        var seconds = Math.floor((distance%(1000*60)) / 1000);
-
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-        if(distance < 0){
-            clearInterval(x);
-            document.getElementById("logo").style.filter = "blur(0)";
-            document.getElementById("title").innerHTML = "OFFICIAL SITE";
-
-            document.getElementById("timer").style.letterSpacing = "3px";
-            document.getElementById("timer").innerHTML = "https://winternightofficial.github.io/OfficialSite/";
-        }
-    }, 1000)
-</script>
 <script>
     var audio = document.getElementById("music");
     
